@@ -7,7 +7,8 @@ console.log("Variables and modules have been loaded...");
 
 app.get(
 	"/video", async (req, res) => {
-		const videoPath = '/home/l3/Documents/Software_Engineering/Microservices_Devops/double/media/213 - Lost Bonds.mkv';
+		const videoPath = '/home/l3/Documents/Software_Engineering/microservices_devops/double/iteration-1/videos/SampleVideo_1280x720_1mb.mp4'
+;
 		const stats = await fs.promises.stat(videoPath);
 		
 		res.writeHead(
